@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Shop">
+    <children>
+        <Label fx:id="password" layoutX="14.0" layoutY="213.0" prefHeight="17.0" prefWidth="124.0">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+      <GridPane layoutX="38.0" layoutY="110.0" prefHeight="226.0" prefWidth="545.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="155.0" minWidth="10.0" prefWidth="155.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="142.0" minWidth="10.0" prefWidth="121.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="136.0" minWidth="10.0" prefWidth="130.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="31.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="description" text="Description" />
+            <TextField fx:id="price" text="Price" GridPane.columnIndex="1" />
+            <TextField fx:id="quanlity" text="Quanlity" GridPane.columnIndex="2" />
+            <TextField fx:id="select" text="Select" GridPane.columnIndex="3" />
+            <TextField fx:id="fib1" text="Sumatra Organic Dark" GridPane.rowIndex="1" />
+            <TextField fx:id="fin1" text="11.95" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="fit1" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <TextField GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <TextField fx:id="fib2" text="Kona Medium" GridPane.rowIndex="2" />
+            <TextField fx:id="fin2" text="18.45" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="fit2" text="1" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <TextField GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <TextField fx:id="fib3" text="Kona Dark" GridPane.rowIndex="3" />
+            <TextField fx:id="fin3" text="18.45" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="fit3" text="2" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <TextField GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <TextField fx:id="fib4" text="Guatemalan Decaf" GridPane.rowIndex="4" />
+            <TextField fx:id="fin4" text="10.45" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="fit4" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <TextField GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <CheckBox mnemonicParsing="false" text="CheckBox" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <CheckBox mnemonicParsing="false" text="CheckBox" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <CheckBox mnemonicParsing="false" text="CheckBox" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <CheckBox mnemonicParsing="false" text="CheckBox" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <Button fx:id="search" layoutX="243.0" layoutY="57.0" mnemonicParsing="false" onAction="#onPress" text="Search" />
+      <TextField layoutX="151.0" layoutY="23.0" prefHeight="26.0" prefWidth="301.0" text="Input name to search" />
+      <Button fx:id="checkout" layoutX="424.0" layoutY="343.0" mnemonicParsing="false" onAction="#onField" text="Check Out" />
+    </children>
+</AnchorPane>
